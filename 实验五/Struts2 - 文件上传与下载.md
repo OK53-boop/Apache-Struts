@@ -171,7 +171,7 @@ mvn archetype:generate \
   
   
   5.
-  package shiyanlou.struts;
+package shiyanlou.struts;
 
 import java.io.File;
 
@@ -391,7 +391,7 @@ public String getUploader() {
   
   
 6.
-  <?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE struts PUBLIC
     "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
     "http://struts.apache.org/dtds/struts-2.5.dtd">
@@ -480,7 +480,7 @@ public String getUploader() {
   
   
   7.
-  <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -555,7 +555,7 @@ public String getUploader() {
   
   
   8.
-  <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="/struts-tags"  prefix="s"%>
 
 <!DOCTYPE html>
@@ -642,7 +642,7 @@ file address:<p> <%=basePath %><s:property value="'uploadFiles/'
   
   
   11.
-  <%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -698,7 +698,7 @@ No File selected!
     
     
     12.
-    <?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          id="WebApp_ID" version="3.0">
@@ -791,7 +791,7 @@ No File selected!
     
     
     13.
-    mvn jetty:run
+mvn jetty:run
     
     这是 Maven 命令，用于启动 Jetty Web 服务器并运行 Web 应用程序。
 
@@ -805,8 +805,7 @@ No File selected!
     
     
  14.
-    
-    package shiyanlou.struts;
+package shiyanlou.struts;
 
 import java.io.File;
 import org.apache.commons.io.FileUtils;
@@ -982,7 +981,7 @@ execute 方法首先获取上传文件保存的真实路径，然后遍历上传
   
   
   16.
-  <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="/struts-tags"  prefix="s"%>
 <!DOCTYPE html>
 <html>
@@ -1051,7 +1050,7 @@ execute 方法首先获取上传文件保存的真实路径，然后遍历上传
   
   
 17.
-  <body>
+<body>
   <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -1119,7 +1118,7 @@ file address:<p> <%=basePath %><s:property value="'uploadMultiFiles/'
     
     
     18.
-    mvn jetty:run
+mvn jetty:run
     
     这是 Maven 命令，用于启动 Jetty Web 服务器。让我解释一下其中的每一个部分：
 
